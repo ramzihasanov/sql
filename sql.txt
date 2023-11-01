@@ -1,0 +1,48 @@
+CREATE DATABASE Academyy
+USE Academyy
+
+CREATE TABLE Teachers
+( Id int primary key identity(1,1),
+name nvarchar(15),
+Surname nvarchar(20),
+Age int,
+Experience int)
+
+
+CREATE TABLE Student(
+Id int primary key identity(1,1),
+name nvarchar(15),
+Surname nvarchar(20),
+Age int)
+
+
+SELECT * FROM Teachers
+SELECT * FROM Student
+
+insert into Teachers values
+('Yusif','Osmanov',22,2),
+('Yusif','Quluzade',26,5)
+
+insert into Student values
+('Remzi','Hesenov',20),
+('eli','eliyev',22)
+
+
+alter table Student add Gender nvarchar(10)
+
+SELECT * FROM Teachers
+SELECT * FROM Student
+
+select * from Teachers where Age=26
+
+Delete from Teachers where name='yusif'
+
+update Student set Age=20 where name='eli'
+
+drop table Teachers
+
+truncate table Student
+
+
+
+
